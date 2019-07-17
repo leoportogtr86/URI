@@ -1,0 +1,73 @@
+
+package uri;
+
+
+import java.util.Scanner;
+
+
+
+
+public class Uri {
+
+    
+    public static void main(String[] args) {
+       
+      Scanner sc = new Scanner (System.in);
+      
+      int dias, horas, minutos, segundos, difQtdSegundos, qtdSegundosInicio, qtdSegundosFinal, diaInicial, horaInicial, minutoInicial, segundoInicial, diaFinal, horaFinal, minutoFinal, segundoFinal;
+      
+      // 1 min = 60 segundos
+      // 1 hora = 3600 segundos
+      // dia = 86400 segundos;
+      
+      System.out.println("Dia inicial: ");
+      diaInicial = sc.nextInt();
+      
+      System.out.println("Horário inicial: ");
+      horaInicial = sc.nextInt();
+      minutoInicial = sc.nextInt();
+      segundoInicial = sc.nextInt();
+      
+      qtdSegundosInicio = diaInicial*86400 + horaInicial*3600 + minutoInicial*60 + segundoInicial;
+      
+      //System.out.println(qtdSegundosInicio);
+      
+      System.out.println("Dia final: ");
+      diaFinal = sc.nextInt();
+      
+      System.out.println("Horário Final: ");
+      horaFinal = sc.nextInt();
+      minutoFinal = sc.nextInt();
+      segundoFinal = sc.nextInt();
+      
+      
+      qtdSegundosFinal = diaFinal*86400 + horaFinal*3600 + minutoFinal*60 + segundoFinal;
+      
+      //System.out.println(qtdSegundosFinal);
+      
+      difQtdSegundos = qtdSegundosFinal - qtdSegundosInicio;
+      
+      //System.out.println(difQtdSegundos);
+      
+      dias = difQtdSegundos/(60*60*24);
+      
+      System.out.println("Dias: " + dias);
+      
+      horas = (difQtdSegundos - dias*60*60*24)/(60*60);
+      
+      System.out.println("Horas: " + horas);
+      
+      
+      minutos = (difQtdSegundos - dias*60*60*24 - horas*60*60)/(60);
+      
+      System.out.println("Minutos: " + minutos); 
+      
+      segundos = (difQtdSegundos - dias*60*60*24 - horas*60*60 - minutos*60);
+      
+      System.out.println("Minutos: " + segundos);  
+      
+      
+      
+    }
+    
+}
