@@ -1,0 +1,65 @@
+package uri;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+
+
+
+
+public class Triangulo {
+
+    
+    public static void main(String[] args) {
+        
+        Locale.setDefault(Locale.US);
+        
+        
+        
+        Scanner sc = new Scanner (System.in);
+        
+        sc.useLocale(Locale.US);
+        
+        double area, perimetro, a, b, c, absBc, absAc, absAb, somaBc, somaAc, somaAb;
+        
+        
+        
+        
+        
+        System.out.println("Digite 3 valores: ");
+        a = sc.nextDouble();
+        b = sc.nextDouble();
+        c = sc.nextDouble();
+        
+        absBc = Math.abs(b - c);
+        absAc = Math.abs(a - c);
+        absAb = Math.abs(a - b);
+        
+        somaBc = b + c;
+        somaAc = a + c;
+        somaAb = a + b;
+        
+        if ((a > absBc && a < somaBc) || (b > absAc && b < somaAc) || (c > absAb && c < somaAb) ){
+        
+        
+            perimetro = a + b + c;
+            
+            System.out.printf("Perímetro: %.1f %n", perimetro);
+        
+        
+        
+        } else {
+        
+            area = ((a + b)*c)/2;
+            System.out.printf("Área: %.1f %n", area);
+          
+        
+        }
+        
+        
+        
+        
+        
+    }
+    
+}
