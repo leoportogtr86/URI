@@ -1,0 +1,36 @@
+package problema1019;
+
+import java.util.Scanner;
+
+public class ConversorDeTempo {
+
+   
+    public static void main(String[] args) {
+      
+      
+      int t, h, m, s;  
+        
+      Scanner sc = new Scanner (System.in);
+      
+      System.out.println("Informe a quantidade de segundos: ");
+      t = sc.nextInt();
+      
+      //1h = 60 min = 3600seg
+      
+      h = t/3600;
+      //System.out.println(h);
+      
+      m = (t - h*3600)/60;
+      
+      //System.out.println(m);
+      
+      s = (t - h*3600 - m*60);
+      
+      //System.out.println(s);
+      
+      System.out.printf("%d:%d:%d %n%n", h, m, s);
+    
+        
+    }
+    
+}
