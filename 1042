@@ -1,0 +1,109 @@
+package uri;
+
+import java.util.Scanner;
+
+
+
+
+public class SortSimples {
+
+    
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner (System.in);
+        
+        int a, b, c, maior = 0, meio = 0, menor = 0, soma;
+        
+        System.out.println("Digite o primeiro número: ");
+        a = sc.nextInt();
+        
+        System.out.println("Próximo número: ");
+        b = sc.nextInt();
+        
+        System.out.println("Próximo número: ");
+        c = sc.nextInt();
+        
+        if (a > b && a > c){
+        
+        
+           maior = a;
+        
+        
+        
+        } else if (b > a && b > c){
+        
+        
+           maior = b;
+        
+        
+        
+        } else if (c > a && c > b){
+        
+        
+           maior = c;
+        
+        
+        
+        }
+        
+        if (a < b && a < c){
+        
+          menor = a;
+        
+        
+        
+        
+        } else if (b < c && b < a){
+        
+          menor = b;
+        
+        
+        
+        
+        } else if (c < a && c < b){
+        
+          menor = c;    
+        
+        
+        
+        } if (a > b && a < c || a < b && a > c){
+        
+           meio = a;
+        
+        
+        
+        } else if (b > a && b < c || b < a && b > c){
+        
+           meio = b;
+        
+        
+        
+        } else if (c > a && c < b || c < a && c > b){
+        
+           meio = c;
+        
+        
+        
+        }
+        
+        
+        
+       
+        
+        
+        System.out.println("Menor: " + menor);
+        System.out.println("Do meio: " + meio);
+        System.out.println("Maior: " + maior);
+        
+        System.out.println(" ");
+        
+        
+        System.out.println(a + " " + b + " " + c);
+        
+        
+        
+        
+        
+    }
+    
+}
