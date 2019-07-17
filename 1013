@@ -1,0 +1,46 @@
+package problema1013;
+
+import java.util.Scanner;
+
+
+public class MaiorNumero {
+
+   
+    public static void main(String[] args) {
+      
+        
+        
+      int a, b, c;
+      
+      Scanner sc = new Scanner (System.in);
+      
+      System.out.println("Digite o primeiro número:");
+      a = sc.nextInt();
+      
+      System.out.println("Digite o segundo número:");
+      b = sc.nextInt();
+      
+      
+      System.out.println("Digite o terceiro número:");
+      c = sc.nextInt();
+      
+      
+      if (a > b && a > c){
+      
+          System.out.printf("%d é o maior%n", a); 
+      
+      } else if (b > a && b > c){
+      
+          System.out.printf("%d é o maior%n", b); 
+      
+      } else if (c > a && c > b){
+      
+          System.out.printf("%d é o maior%n", c); 
+      
+      }    
+      
+    
+        
+    }
+    
+}
