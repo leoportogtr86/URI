@@ -1,0 +1,42 @@
+package olimpiadas;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+
+public class Consumo {
+
+   
+    public static void main(String[] args) {
+      
+       Locale.setDefault(Locale.US);
+      
+       float distancia, combustivel, gastoMedio;
+       
+       Scanner sc = new Scanner (System.in);
+       
+       System.out.println("Digite a distância percorrida em KM:");
+       distancia = sc.nextFloat();
+       
+       System.out.println("Digite a quantidade de gasolina gasta em litros: ");
+       combustivel = sc.nextFloat();
+       
+       
+       gastoMedio = distancia/combustivel;
+       
+       System.out.printf("%.2f Km/l %n", gastoMedio);
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+        
+    }
+    
+}
