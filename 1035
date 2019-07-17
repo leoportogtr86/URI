@@ -1,0 +1,48 @@
+package uri;
+
+import java.util.Scanner;
+
+
+
+
+public class TesteDeSelecao1 {
+
+    
+    public static void main(String[] args) {
+        
+        
+       Scanner sc = new Scanner (System.in);
+       
+       int a, b, c, d;
+       
+       System.out.println("Digite o valor de A: ");
+       a = sc.nextInt();
+       
+       System.out.println("Digite o valor de B: ");
+       b = sc.nextInt();
+       
+       System.out.println("Digite o valor de C: ");
+       c = sc.nextInt();
+       
+       System.out.println("Digite o valor de D: ");
+       d = sc.nextInt();
+       
+       
+       if (b>c && d>c && (c+d)>(a+b) && c>0 && d>0 && a%2==0){
+    
+    
+           System.out.println("Valores aceitos");
+    
+    
+       } else {
+       
+         
+           System.out.println("Valores não aceitos");      
+       
+       }     
+        
+        
+        
+    }
+    
+}
