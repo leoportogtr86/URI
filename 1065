@@ -1,0 +1,33 @@
+
+package treino;
+
+import java.util.Scanner;
+
+
+public class Treino {
+
+   
+    public static void main(String[] args) {
+        
+        int x, i, pares = 0;
+        
+        Scanner sc = new Scanner (System.in);
+        
+        for (i = 0; i <= 4; i++){
+        
+            System.out.println("Digite um valor inteiro:");
+            x = sc.nextInt();
+            
+            if (x%2 == 0){
+            
+               pares++;
+            
+            }      
+        }
+        
+        System.out.println("Quantidade de pares digitados: " + pares); 
+        
+        
+    }
+    
+}
