@@ -1,0 +1,52 @@
+
+package uri1066;
+
+import java.util.Scanner;
+
+
+public class Uri1066 {
+
+    
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner (System.in);
+        
+        int x, par = 0, impar = 0, pos = 0, neg = 0, i;
+        
+        
+        for (i = 0; i < 5; i++){
+        
+            System.out.println("Digite um valor: ");
+            x = sc.nextInt();
+            
+            if (x%2 == 0){
+            
+               par++;
+            
+            
+            } else {
+            
+               impar++;
+            
+            }
+            
+            if (x > 0){
+            
+               pos++;
+            
+            
+            } else if (x < 0) {
+            
+               neg++;
+            
+            }
+        
+        }
+        
+        System.out.printf("%d pares %n%d ímpares %n%d Positivos %n%d Negativos %n%n", par, impar, pos, neg);
+        
+        
+        
+    }
+    
+}
