@@ -1,0 +1,46 @@
+
+package uri1072;
+
+import java.util.Scanner;
+
+public class Uri1072 {
+
+    
+    public static void main(String[] args) {
+        
+        
+        int n, x, i, cont1 = 0, cont2 = 0;
+        
+        Scanner sc = new Scanner (System.in);
+        
+        System.out.println("Quantos valores deseja digitar? ");
+        n = sc.nextInt();
+        
+        for (i = 0; i < n; i++){
+           
+            System.out.println("Digite um valor: ");
+            x = sc.nextInt();
+            
+            if (x >= 10 && x <= 20){
+            
+               cont1++;
+            
+            } else {
+            
+               cont2++;
+            
+            }
+            
+        
+        }
+        
+        
+        System.out.println("in: " + cont1);
+        System.out.println("out: " + cont2);
+        
+        
+        
+        
+    }
+    
+}
