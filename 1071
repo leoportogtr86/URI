@@ -1,0 +1,53 @@
+
+package uri1071;
+
+import java.util.Scanner;
+
+
+public class Uri1071 {
+
+    
+    public static void main(String[] args) {
+        
+        int x, y, i, somaImpar = 0, menor, maior;
+        
+        Scanner sc = new Scanner (System.in);
+        
+        System.out.println("Insira 2 números inteiros: ");
+        x = sc.nextInt();
+        y = sc.nextInt();
+        
+        if (x > y){
+           
+            maior = x;
+            menor = y;
+        
+        } else {
+            
+            maior = y;
+            menor = x;
+        }
+             
+        
+        for (i = menor + 1; i < maior; i++){
+        
+           if (i%2 != 0){
+           
+               System.out.print(i + " ");
+               somaImpar += i; 
+           
+           }       
+        }
+        
+        System.out.println("");
+        
+        System.out.println(somaImpar);
+        
+        
+        //System.out.println("Soma dos ímpares entre x e y: " + somaImpar);  
+        
+        
+        
+    }
+    
+}
