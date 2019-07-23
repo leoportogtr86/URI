@@ -1,0 +1,61 @@
+
+package uri1074;
+
+import java.util.Scanner;
+
+
+public class Uri1074 {
+
+    
+    public static void main(String[] args) {
+        
+        int n, i, x;
+        
+        
+        Scanner sc = new Scanner (System.in);
+        
+        System.out.println("Digite a quantidade de valores que deseja testar:");
+        n = sc.nextInt();
+        
+        
+        for (i = 0; i < n; i++){
+        
+            System.out.println("Digite um valor:");
+            x = sc.nextInt();
+            
+            if (x % 2 == 0 && x != 0){
+            
+            
+                System.out.println("Even");
+                
+            } else if (x % 2 != 0){
+            
+               System.out.println("Odd");            
+            
+            } else if (x == 0){
+            
+               System.out.println("");
+            
+            
+            }
+            
+            if (x > 0){
+               
+                System.out.println("Positive");
+            
+            
+            } else if (x < 0){
+            
+                System.out.println("Negative");
+            
+            } else {
+            
+                System.out.println("NULL");
+            
+            }               
+        
+        }    
+        
+    }
+    
+}
