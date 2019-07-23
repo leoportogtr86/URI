@@ -1,0 +1,48 @@
+
+package uri1079;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+
+public class Uri1079 {
+
+    
+    public static void main(String[] args) {
+        
+        int n, i, p1, p2, p3, pTotal; 
+        float a, b, c, media;
+        
+        
+        p1 = 2; 
+        p2 = 3;
+        p3 = 5;       
+        
+        pTotal = p1 + p2 + p3;
+        
+        Locale.setDefault(Locale.US);
+        
+        Scanner sc = new Scanner (System.in);
+        sc.useLocale(Locale.US);
+        
+        
+        System.out.println("Digite a quantidade de testes a serem feitos:");
+        n = sc.nextInt();
+        
+        
+        for (i = 0; i < n; i++){
+        
+            System.out.println("Digite 3 valores: ");
+            a = sc.nextFloat();
+            b = sc.nextFloat();
+            c = sc.nextFloat();
+            
+            media = (a*p1 + b*p2 + c*p3)/pTotal;
+            
+            System.out.printf("Média ponderada: %.1f %n", media);
+            System.out.println("----------------------------------------------");
+        }      
+        
+    }
+    
+}
