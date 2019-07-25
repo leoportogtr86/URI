@@ -1,0 +1,25 @@
+
+package uri1095;
+
+
+public class Uri1095 {
+
+    
+    public static void main(String[] args) {
+        
+        int i = 1, j = 60, cont;
+        
+        for (cont = 0; cont < 13; cont++ ){
+        
+            System.out.printf("i = %d   ", i);
+            i += 3;
+            
+            System.out.printf("j = %d   %n", j);
+            System.out.println("-----------------");
+            j -= 5;
+        
+        }
+        
+    }
+    
+}
