@@ -1,0 +1,38 @@
+
+package uri1096;
+
+
+public class Uri1096 {
+
+    
+    public static void main(String[] args) {
+        
+        int i = 1, j = 7, cont, cont2;
+        
+        for (cont2 = 0; cont2 < 100; cont++){
+        
+        
+           for (cont = 0; cont < 3; cont++){
+        
+               System.out.printf("i = %d   j = %d  ", i, j);
+               System.out.println("");
+               j--;
+               if (j < 5){
+            
+                  j = 7;
+            
+               }
+        
+           }
+           
+           i += 3;
+           if (i > 10){
+           
+              break;
+           
+           }
+        
+        }
+    }
+    
+}
