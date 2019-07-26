@@ -1,0 +1,61 @@
+package uri1099;
+
+import java.util.Scanner;
+
+public class Uri1099 {
+
+    
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner (System.in);
+        
+        int n, x, y, i, cont, soma = 0, maior = 0, menor = 0;
+        
+        System.out.println("Digite a quantidade de casos de teste:");
+        n = sc.nextInt();
+        
+        System.out.println("**************************************************");
+        
+        for (i = 0; i < n; i++){
+        
+            System.out.println("Digite um valor:");
+            x = sc.nextInt();
+            System.out.println("Digite outro valor:");
+            y = sc.nextInt();
+            
+            if (x > y){
+            
+               maior = x;
+               menor = y;
+            
+            } else if (y > x){
+            
+               maior = y;
+               menor = x;
+            
+            } else {
+            
+               soma = 0;
+            
+            }
+            
+            for (cont = menor + 1; cont < maior; cont++){
+            
+               if (cont % 2 != 0){
+               
+                  soma += cont;  
+               
+               }
+            
+            }
+            
+            System.out.println("Soma dos ímpares: " + soma);
+            cont = 0;
+            soma = 0;
+            System.out.println("**********************************************");
+        }
+        
+        
+    }
+    
+}
