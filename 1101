@@ -1,0 +1,58 @@
+
+package uri1101;
+
+import java.util.Scanner;
+
+
+public class Uri1101 {
+
+    
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner (System.in);
+        
+        int m = 1, n = 1, cont, menor = 0, maior = 0, soma = 0;
+        
+        while (m > 0 && n > 0 ){
+        
+            System.out.println("Digite 2 valores:");
+            m = sc.nextInt();
+            n = sc.nextInt();
+            
+            if (m <= 0 || n <= 0){
+            
+                break;
+            
+            }
+            
+            if (m > n){
+            
+               maior = m;
+               menor = n;
+               
+            } else if (n > m){
+               
+                maior = n;
+                menor = m;            
+            
+            }
+            
+            for (cont = menor; cont <= maior; cont++){
+            
+                System.out.println(cont);
+                soma += cont;
+                
+            
+            
+            } 
+            
+            System.out.println("Soma: " + soma);
+            soma = 0;
+            cont = 0;
+        
+        }
+        
+        
+    }
+    
+}
