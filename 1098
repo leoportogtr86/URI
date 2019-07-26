@@ -1,0 +1,41 @@
+
+package uri1098;
+
+import java.util.Locale;
+
+
+public class Uri1098 {
+
+    
+    public static void main(String[] args) {
+        
+        
+        float i = 0, j = 1, k = 1; 
+        int cont1;
+        
+        Locale.setDefault(Locale.US);
+        
+        
+        while (i < 3){
+        
+        
+           for (cont1 = 0; cont1 < 3; cont1++){
+           
+               System.out.printf("i = %.1f  j = %.1f ", i, j);
+               System.out.println("");
+               j++;
+              
+           
+           
+        }
+            j = k;
+            k += 0.2f;
+            
+            i += 0.2f;
+            j += 0.2f;       
+        
+        }       
+        
+    }
+    
+}
