@@ -1,0 +1,45 @@
+
+package uri1113;
+
+import java.util.Scanner;
+
+
+public class Uri1113 {
+
+    
+    public static void main(String[] args) {
+        
+        int a = 0, x, y;
+        
+        Scanner sc = new Scanner (System.in);
+        
+        
+        while (a == 0){
+        
+        
+            System.out.println("Digite 2 números:");
+            x = sc.nextInt();
+            y = sc.nextInt();
+            
+            if (x < y){
+               
+                System.out.println("Crescente");
+            
+            } else if (y < x){
+            
+                System.out.println("Decrescente");
+            
+            } else {
+            
+                System.out.println("Iguais.");
+            
+            }
+            
+        
+        
+        }
+        
+        
+    }
+    
+}
