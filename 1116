@@ -1,0 +1,46 @@
+package uri1116;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Uri1116 {
+
+    public static void main(String[] args) {
+
+        Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in);
+        sc.useLocale(Locale.US);
+
+        float x, y;
+        int n, i;
+
+        System.out.println("Quantas divisões deseja realizar?");
+        n = sc.nextInt();
+
+        for (i = 0; i < n; i++) {
+
+            System.out.println("Digite 2 valores;");
+            x = sc.nextFloat();
+            y = sc.nextFloat();
+            
+            if (x == 0){
+            
+                System.out.println("Divisão impossível.");
+                break;
+            
+            }
+            
+            if (y == 0){
+            
+                System.out.println("O resultado é 0");
+            
+            }
+
+            System.out.printf("A divisão entre os números é: %.2f %n", x / y);
+            System.out.println("*****************************************");
+
+        }
+
+    }
+
+}
