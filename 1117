@@ -1,0 +1,54 @@
+
+package uri1117;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+
+public class Uri1117 {
+
+    
+    public static void main(String[] args) {
+        
+        Locale.setDefault(Locale.US);
+        
+        float n1, n2, media;
+        
+        Scanner sc = new Scanner (System.in);
+        
+        System.out.println("Digite duas notas para calcular a média:");
+        n1 = sc.nextFloat();
+        
+        if (n1 < 0 || n1 > 10){
+        
+            System.out.println("Nota inválida");
+            
+        
+        }
+        
+        
+        
+        n2 = sc.nextFloat();
+        
+        if (n2 < 0 || n2 > 10){
+        
+            System.out.println("Nota inválida");
+            
+        
+        }
+        
+        
+        
+        media = (n1 + n2)/2;
+        
+        System.out.printf("Média: %.1f ", media);
+        System.out.println("");
+        
+        
+        
+        
+        
+        
+    }
+    
+}
