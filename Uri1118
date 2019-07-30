@@ -1,0 +1,62 @@
+
+package uri1118;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+
+public class Uri1118 {
+
+   
+    public static void main(String[] args) {
+        
+        Locale.setDefault(Locale.US);
+        
+        float n1, n2, media; 
+        int a = 1;
+        
+        Scanner sc = new Scanner (System.in);
+        sc.useLocale(Locale.US);
+        
+        while (a == 1){
+        
+            System.out.println("Digite as duas notas do aluno:");
+            n1 = sc.nextFloat();
+            n2 = sc.nextFloat();
+            
+            media = (n1 + n2)/2;
+            
+            if ((n1 < 0 || n1 > 10) && (n2 < 0 || n2 > 10)){
+            
+                System.out.println("Média: " + media);
+                break;
+            
+            
+            } else if (n1 < 0 || n1 > 10 || n2 < 0 || n2 > 10){
+            
+                System.out.println("Valor inválido");                
+                break;
+                
+                
+            }
+            
+            System.out.println("Média: " + media);
+            
+            System.out.println("Realizar outro cálculo:");
+            System.out.println("1 - Sim");
+            System.out.println("2 - Não");
+            a = sc.nextInt();
+            
+            
+            if (a != 1 && a != 2){
+            
+                System.out.println("Valor inválido");                
+                break;
+            }
+            
+            
+        }     
+        
+    }
+    
+}
