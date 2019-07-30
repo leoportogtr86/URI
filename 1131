@@ -1,0 +1,82 @@
+
+package uri1131;
+
+import java.util.Scanner;
+
+
+public class Uri1131 {
+
+    
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner (System.in);
+        
+        int a = 1, gremio = 0, inter = 0, empate = 0, grenal = 0, golsGremio, golsInter, somaGolsGremio = 0, somaGolsInter = 0;
+        String vencedorGeral;
+        
+        
+        
+        while (a == 1){
+        
+            System.out.println("Quantidade de gols do Grêmio: ");
+            golsGremio = sc.nextInt();
+            
+            System.out.println("Quantidade de gols do Internacional;: ");
+            golsInter = sc.nextInt();
+            
+            somaGolsGremio += golsGremio;
+            somaGolsInter += golsInter;
+            
+            grenal++;
+            
+            if (golsGremio > golsInter){
+            
+               gremio++;
+            
+            } else if (golsGremio < golsInter){
+            
+               inter++;
+            
+            } else {
+            
+               empate++;
+            
+            }
+            
+            golsGremio = 0;
+            golsInter = 0;
+            
+            System.out.println("Deseja inserir novos dados?");
+            System.out.println("1 - Sim");
+            System.out.println("2 - Não");
+            a = sc.nextInt();            
+        }
+        
+        System.out.println("Número de grenais analisados: " + grenal);
+        System.out.println("Número de vitórias do Inter: " + inter);
+        System.out.println("Número de vitórias do Grêmio: " + gremio);
+        System.out.println("Número de empates: " + empate);
+        
+        
+        if (gremio > inter){
+        
+           vencedorGeral = "Grêmio";
+        
+        } else if (gremio < inter){
+        
+           vencedorGeral = "Inter";
+        
+        } else {
+        
+           vencedorGeral = "Empate";
+        
+        }
+        
+        System.out.println("Venecedor geral dos grenais: " + vencedorGeral);
+        
+        
+        
+        
+    }
+    
+}
