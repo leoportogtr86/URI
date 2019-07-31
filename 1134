@@ -1,0 +1,59 @@
+package uri1134;
+
+import java.util.Scanner;
+
+public class Uri1134 {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int combustivel, alcool = 0, gasolina = 0, diesel = 0, a = 1;
+
+        while (a == 1) {
+
+            System.out.println("Digite a opção desejada.");
+            System.out.println("1 - Álcool");
+            System.out.println("2 - Gasolina");
+            System.out.println("3 - Diesel");
+            System.out.println("4 - Fim");
+            
+           
+
+            combustivel = sc.nextInt();
+            
+             
+            if (combustivel == 1){
+            
+               alcool++;
+            
+            } else if (combustivel == 2){
+            
+               gasolina++;
+            
+            } else if (diesel == 3){
+            
+               alcool++;
+            
+            }
+            
+            
+            if (combustivel == 4){
+            
+               break;
+            
+            }
+            
+            
+
+        }
+        
+        System.out.println("Muito obrigado!");
+        System.out.println("Álcool: " + alcool);
+        System.out.println("Gasolina: " + gasolina);
+        System.out.println("Diesel: " + diesel);
+        
+
+    }
+
+}
