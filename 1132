@@ -1,0 +1,50 @@
+
+package uri1132;
+
+import java.util.Scanner;
+
+
+public class Uri1132 {
+
+    
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner (System.in);
+        
+        int x, y, maior = 0, menor = 0, i, soma = 0;
+        
+        System.out.println("Escreva 2 números: ");
+        x = sc.nextInt();
+        y = sc.nextInt();
+        
+        if (x > y){
+        
+           maior = x;
+           menor = y;
+        
+        } else if (x < y){
+        
+           menor = x;
+           maior = y;
+        
+        }       
+        
+       for (i = menor; i <= maior; i++){
+        
+        
+          if (i % 13 != 0){
+          
+             soma += i;
+          
+          }
+        
+        
+       }
+       
+        System.out.println("Soma dos números não múltiplos de 13 entre a faixa de valores digitada:  " + soma);
+        
+        
+        
+    }
+    
+}
